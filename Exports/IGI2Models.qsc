@@ -1,0 +1,28 @@
+// Script for converting common models //////////////////////////////////////
+
+// Script directories ///////////////////////////////////////////////////////
+
+SetAnimDirectory("anims");
+SetModelDirectory("models");
+SetTextureDirectory("textures");
+SetPaletteDirectory("palettes");
+SetTempDirectory("temp");
+
+// Model settings /////////////////////////////////////////////////////////
+
+SetScale(40.96);
+SetTargetPlatform("PC");
+
+// Texture settings /////////////////////////////////////////////////////////
+
+StartTexScript("commontex");
+
+SetLightmapResolution(1);
+
+
+
+// End script ///////////////////////////////////////////////////////////////
+
+EndTexScript();
+
+BuildStatic("level1");
